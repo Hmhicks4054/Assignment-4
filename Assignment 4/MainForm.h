@@ -196,19 +196,19 @@ namespace Assignment4 {
 #pragma endregion
 
 private:System::Void btnOK_Click(System::Object^ sender, System::EventArgs^ e) {
-	this->tbFirstName->Text = "";
-	this->tbLastName->Text = "";
+	sting^ firstName = this->tbFirstName->Text = "";
+	sting^ lastName = this->tbLastName->Text = "";
 	this->lbWelcome->Text = "Hello " + tbFirstName + " " + tbLastName;
 }
 
 private: System::Void btnClear_Click(System::Object^ sender, System::EventArgs^ e) {
+			this->tbFirstName->Text = "";
+			this->tbLastName->Text = "";
 			this->lbWelcome->Text = "";
 }
 
 	private: System::Void MainForm_Load(System::Object^ sender, System::EventArgs^ e) {
 		this->lbWelcome->Text = "";
 	}
-private: System::Void lbWelcome_Click(System::Object^ sender, System::EventArgs^ e) {
-}
 };
 }
